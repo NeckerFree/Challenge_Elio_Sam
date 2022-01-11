@@ -4,12 +4,31 @@
     <meta charset="UTF-8">
     <title>Fork Me! FCC: Test Suite Template</title>
     <link rel="stylesheet" href="css/style.css">
+  <style>
+.nav-class{
+    position: fixed;
+    top: 0;
+}
+section{
+    font-size: 20px;
+}
+@media (max-width: 100px){
+    section{
+        font-size: 10px;
+    }
+}
+.container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  </style>
   </head>
 
   <body>
-    <header id='header'>
+    <header id='header' class="container" >
       <img id="header-img" src="http://freesvg.org/img/public-domain-logo-streamlined.png">
-      <nav id='nav-bar'>
+      <nav id='nav-bar' class="nav-class">
         <ul>
           <li><a class="nav-link" href="#Section1">Home</a> </li>
           <li><a class="nav-link" href="#Section2">shop</a></li>
@@ -18,7 +37,7 @@
       </nav>
       <video id="video" src="https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4" type="video/mp4" alt="video">Test Video</video>
       <form id="form" action="https://www.freecodecamp.com/email-submit">
-        <input id="email" placeholder="email" type="email" required ></input>
+        <input id="email" name="email" placeholder="email" type="email" required ></input>
         <input type="submit" id="submit" value="submit">
       </form>
     </header>
